@@ -14,4 +14,7 @@ console.log('hello');
 
 $(document).on('click', '.contact-submit', function() {
     event.preventDefault();
+    $('.contact-name').val('');
+    $('.contact-email').val('');
+    $('.contact-message').val('');
 })
