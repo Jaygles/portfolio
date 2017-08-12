@@ -18,3 +18,4 @@ $(document).on('click', '.contact-submit', function() {
     $('.contact-email').val('');
     $('.contact-message').val('');
 })
+
