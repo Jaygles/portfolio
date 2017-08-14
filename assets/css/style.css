@@ -333,3 +333,116 @@ footer {
     font-family: 'Noto Sans', sans-serif;
     color: lightgrey;
 }
+
+@media screen and (max-width: 1099px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-left {
+        height: 350px;
+        width: 100%;
+    }
+
+    .about-text {
+        font-size: 2.5em;
+    }
+
+    .about-right {
+        height: 250px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .contact {
+        flex-direction: column-reverse;
+    }
+
+    .contact-left {
+        height: 450px;
+        width: 100%;
+    }
+
+    .contact-form {
+        height: 450px;
+    }
+
+    .contact-message {
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .contact-right {
+        height: 150px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .contact-title {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .contact-text {
+        margin-bottom: 0;
+        margin-right: 30px;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about {
+        max-height: 800px;
+    }
+
+    .about-left {
+        min-height: 500px;
+    }
+
+    .about-right {
+        min-height: 300px;
+    }
+
+    .portfolio {
+        height: 800px;
+    }
+
+    .portfolio-top-text {
+
+    }
+
+    .portfolio-bottom {
+        height: 700px;
+        flex-direction: row;
+    }
+
+    .portfolio-row {
+        height: 700px;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .contact {
+        min-height: 800px;
+    }
+
+    .contact-left {
+        height: 500px;
+    }
+
+    .contact-right {
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .contact-title {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .contact-text {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
