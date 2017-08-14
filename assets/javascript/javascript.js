@@ -5,7 +5,7 @@ $(window).scroll(function() {
         });
     } else if ($(this).scrollTop() > 460) {
         $('.nav-icon').css({
-            'opacity': -5 + ($(this).scrollTop() / 100)
+            'opacity': -4 + ($(this).scrollTop() / 110)
         });
     };
 });
