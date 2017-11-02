@@ -204,7 +204,14 @@ main {
     align-items: center;
 }
 
+.portfolio-link {
+    height: 175px;
+    width: 250px;
+}
+
 .portfolio-img {
+    height: 175px;
+    width: 250px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
