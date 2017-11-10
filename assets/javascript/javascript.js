@@ -10,20 +10,17 @@ $(window).scroll(function () {
   }
 });
 
-$(document).on('click', '.contact-submit', () => {
-  event.preventDefault();
+const $contactform = $('.contact-form');
+
+$contactform.submit(function(e) {
+  e.preventDefault();
 
   $.ajax({
     url: "https://formspree.io/JaySull514@gmail.com",
     method: "POST",
-    data: {
-      name: $('.contact-name').val(),
-      email: $('.contact-email').val(),
-      message: $('.contact-message').val(),
-          },
+    data: $(this).serialize(),
     dataType: "json",
     success: function(data){
-      console.log(data);
       alert("Message has been sent, thanks");
     }
   });
