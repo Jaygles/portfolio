@@ -12,17 +12,17 @@ $(window).scroll(function () {
 
 const $contactform = $('.contact-form');
 
-$contactform.submit(function(e) {
+$contactform.submit((e) => {
   e.preventDefault();
 
   $.ajax({
-    url: "https://formspree.io/JaySull514@gmail.com",
-    method: "POST",
+    url: 'https://formspree.io/JaySull514@gmail.com',
+    method: 'POST',
     data: $(this).serialize(),
-    dataType: "json",
-    success: function(data){
-      alert("Message has been sent, thanks");
-    }
+    dataType: 'json',
+    success: () => {
+      alert('Message has been sent, thanks');
+    },
   });
   $('.contact-name').val('');
   $('.contact-email').val('');
