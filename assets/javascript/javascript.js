@@ -52,10 +52,18 @@ $portfolioImg.on('mouseleave', function() {
 
 function portfolioMouseMove(e) {
   const modalHeight = $portfolioModal[0].clientHeight;
-  $portfolioModal.css({
-    left: e.pageX + 40,
-    top: e.pageY - modalHeight - 20,
-  })
+  if (e.target.classList.contains('right')) {
+    $portfolioModal.css({
+      left: e.pageX - 440,
+      top: e.pageY - modalHeight - 20,
+    });
+  } else {
+    $portfolioModal.css({
+      left: e.pageX + 40,
+      top: e.pageY - modalHeight - 20,
+    });
+  }
+
 }
 
 function portfolioMouseOn(title, text) {
