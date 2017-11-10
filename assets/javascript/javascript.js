@@ -60,7 +60,7 @@ function portfolioMouseMove(e) {
 
 function portfolioMouseOn(title, text) {
   $portfolioModal.css({
-    width: "200px",
+    width: "300px",
     visibility: 'visible',
     "z-index": "10",
   });
