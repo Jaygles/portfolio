@@ -85,16 +85,17 @@ function portfolioMouseOff() {
 
 // Google Analytics events
 
-function handleOutboundLinkClicks(event) {
+function handleOutboundLinkClicks(event, label) {
   ga('send', 'event', {
     eventCategory: 'Outbound Link',
     eventAction: 'click',
-    eventLabel: event.currentTarget.attributes.href.nodeValue.toString(),
+    eventLabel: label,
     transport: 'beacon',
   });
 }
 
 $('.portfolio-link').click((event) => {
-  console.log(event.currentTarget.attributes.href.nodeValue.toString());
-  handleOutboundLinkClicks(event);
+  const link = $('.portfolio-link').attr('href');
+  console.log(link);
+  handleOutboundLinkClicks(event, link);
 });
