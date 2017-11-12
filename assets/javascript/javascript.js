@@ -89,12 +89,12 @@ function handleOutboundLinkClicks(event) {
   ga('send', 'event', {
     eventCategory: 'Outbound Link',
     eventAction: 'click',
-    eventLabel: event.currentTarget.attributes.href.nodeValue,
+    eventLabel: event.currentTarget.attributes.href.nodeValue.toString(),
     transport: 'beacon',
   });
 }
 
 $('.portfolio-link').click((event) => {
-  console.log(event.currentTarget.attributes.href.nodeValue);
+  console.log(event.currentTarget.attributes.href.nodeValue.toString());
   handleOutboundLinkClicks(event);
 });
