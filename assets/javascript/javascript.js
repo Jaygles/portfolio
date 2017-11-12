@@ -11,7 +11,7 @@ $(window).scroll(function () {
   }
 });
 
-//Contact form submission function
+// Contact form submission function
 const $contactform = $('.contact-form');
 
 $contactform.submit((e) => {
@@ -31,23 +31,23 @@ $contactform.submit((e) => {
   $('.contact-message').val('');
 });
 
-//Portfolio info modal
+// Portfolio info modal
 const $portfolioModal = $('.portfolio-modal');
 const $portfolioImg = $('.portfolio-img');
 
-$portfolioImg.mousemove(function(e) {
+$portfolioImg.mousemove((e) => {
   const hover = e;
-  portfolioMouseMove(hover)
+  portfolioMouseMove(hover);
 });
 
-$portfolioImg.on('mouseenter', function() {
+$portfolioImg.on('mouseenter', function () {
   const title = $(this).attr('alt');
   const text = $(this).attr('desc-data');
-  portfolioMouseOn(title, text)
+  portfolioMouseOn(title, text);
 });
 
-$portfolioImg.on('mouseleave', function() {
-  portfolioMouseOff()
+$portfolioImg.on('mouseleave', () => {
+  portfolioMouseOff();
 });
 
 function portfolioMouseMove(e) {
@@ -63,15 +63,14 @@ function portfolioMouseMove(e) {
       top: e.pageY - modalHeight - 20,
     });
   }
-
 }
 
 function portfolioMouseOn(title, text) {
   $portfolioModal.css({
-    'min-width': "400px",
+    'min-width': '400px',
     'max-width': '400px',
     visibility: 'visible',
-    "z-index": "10",
+    'z-index': '10',
   });
   $('.portfolio-modal-title').text(title);
   $('.portfolio-modal-info').text(text);
@@ -81,5 +80,21 @@ function portfolioMouseOff() {
   $portfolioModal.css({
     visibility: 'hidden',
     'z-index': '-1',
-  })
+  });
 }
+
+// Google Analytics events
+
+function handleOutboundLinkClicks(event) {
+  ga('send', 'event', {
+    eventCategory: 'Outbound Link',
+    eventAction: 'click',
+    eventLabel: event.target.href,
+    transport: 'beacon',
+  });
+}
+
+$('.portfolio-link').click((event) => {
+  console.log(event);
+  handleOutboundLinkClicks(event);
+});
