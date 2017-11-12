@@ -89,7 +89,7 @@ function handleOutboundLinkClicks(event) {
   ga('send', 'event', {
     eventCategory: 'Outbound Link',
     eventAction: 'click',
-    eventLabel: event.target.href,
+    eventLabel: event.currentTarget.attributes.href,
     transport: 'beacon',
   });
 }
