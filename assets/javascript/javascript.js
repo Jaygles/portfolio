@@ -95,7 +95,7 @@ function handleOutboundLinkClicks(event, label) {
 }
 
 $('.portfolio-link').click((event) => {
-  const link = $('.portfolio-link').attr('href');
+  const link = event.currentTarget.href;
   console.log(link);
   handleOutboundLinkClicks(event, link);
 });
