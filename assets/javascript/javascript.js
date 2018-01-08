@@ -1,5 +1,5 @@
 // Nav-bar icon fade function
-$(window).scroll(function () {
+$(window).scroll(() => {
   if ($(this).scrollTop() < 460) {
     $('.nav-icon').css({
       opacity: 0,
@@ -26,6 +26,7 @@ $contactform.submit((e) => {
       alert('Message has been sent, thanks');
     },
   });
+
   $('.contact-name').val('');
   $('.contact-email').val('');
   $('.contact-message').val('');
@@ -34,21 +35,6 @@ $contactform.submit((e) => {
 // Portfolio info modal
 const $portfolioModal = $('.portfolio-modal');
 const $portfolioImg = $('.portfolio-img');
-
-$portfolioImg.mousemove((e) => {
-  const hover = e;
-  portfolioMouseMove(hover);
-});
-
-$portfolioImg.on('mouseenter', function () {
-  const title = $(this).attr('alt');
-  const text = $(this).attr('desc-data');
-  portfolioMouseOn(title, text);
-});
-
-$portfolioImg.on('mouseleave', () => {
-  portfolioMouseOff();
-});
 
 function portfolioMouseMove(e) {
   const modalHeight = $portfolioModal[0].clientHeight;
@@ -82,6 +68,20 @@ function portfolioMouseOff() {
     'z-index': '-1',
   });
 }
+
+$portfolioImg.mousemove((e) => {
+  portfolioMouseMove(e);
+});
+
+$portfolioImg.on('mouseenter', () => {
+  const title = $(this).attr('alt');
+  const text = $(this).attr('desc-data');
+  portfolioMouseOn(title, text);
+});
+
+$portfolioImg.on('mouseleave', () => {
+  portfolioMouseOff();
+});
 
 // Google Analytics events
 
