@@ -82,11 +82,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .cta-center-img {
-  width: 60%;
+  height: 300px;
+  width: 228px;
   z-index: 10;
 }
 
@@ -128,7 +129,7 @@ main {
 
 .about-text {
   margin: 0 60px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: darkred;
   font-size: 2.7em;
   font-weight: 700;
@@ -184,7 +185,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: darkred;
   font-size: 2em;
   font-weight: 600;
@@ -264,7 +265,7 @@ main {
   padding: 5px;
   margin: 10px 0;
   border: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.2em;
 }
 
@@ -273,7 +274,7 @@ main {
   padding: 5px;
   margin: 20px 0;
   border: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.2em;
 }
 
@@ -285,7 +286,7 @@ main {
   padding: 5px;
   margin-bottom: 10px;
   border: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.2em;
 }
 
@@ -295,7 +296,7 @@ main {
   padding: 10px 20px;
   border: 0;
   background-color: #3f0000;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.1em;
   color: lightgrey;
 }
@@ -318,7 +319,7 @@ main {
 }
 
 .contact-title {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: darkred;
   font-size: 3em;
   font-weight: 700;
@@ -328,7 +329,7 @@ main {
 .contact-text {
   margin-bottom: 80px;
   width: 63%;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.3em;
   text-align: center;
   color: darkred;
@@ -341,7 +342,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: lightgrey;
 }
 
@@ -370,7 +371,7 @@ footer {
   line-height: 1.3em;
   font-size: 2em;
   font-weight: 600;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: darkred;
 }
 
@@ -382,7 +383,7 @@ footer {
   line-height: 1.3em;
   font-size: 1.2em;
   font-weight: 600;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: darkred;
 }
 
