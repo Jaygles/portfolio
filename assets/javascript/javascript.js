@@ -74,8 +74,9 @@ $portfolioImg.mousemove((e) => {
 });
 
 $portfolioImg.on('mouseenter', (e) => {
-  const title = $(this).attr('alt');
-  const text = $(this).attr('data-desc');
+  const attributes = e.currentTarget.attributes;
+  const title = attributes.alt.value;
+  const text = attributes['data-desc'].value;
   portfolioMouseOn(title, text);
 });
 

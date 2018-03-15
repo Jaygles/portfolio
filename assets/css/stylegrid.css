@@ -1,0 +1,310 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    grid-column: span 3;
+}
+
+main {
+    grid-column: span 3;
+}
+
+.nav-main {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: darkred;
+    z-index: 10;
+}
+
+.nav-icon {
+    height: 35px;
+    width: 35px;
+    margin-top: 7px;
+    opacity: 0;
+    -webkit-background-size: 35px 35px;
+    background-size: 35px 35px;
+}
+
+.nav-icon:hover {
+    cursor: pointer;
+}
+
+.nav-left-icon {
+    visibility: hidden;
+    margin-left: 7px;
+    float: left;
+    background-image: url(../images/icons/me-icon.png);
+}
+
+.nav-right-icon-one {
+    margin-right: 7px;
+    float: right;
+    background-image: url(../images/icons/github-icon.png);
+}
+
+.nav-right-icon-two {
+    margin-right: 7px;
+    float: right;
+    background-image: url(../images/icons/linkedin-icon.png);
+}
+
+.nav-right-icon-three {
+    margin-right: 7px;
+    float: right;
+    background-image: url(../images/icons/stack-icon.png);
+}
+
+.icon-link {
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+
+.cta-main {
+    width: 100%;
+    min-height: 600px;
+    padding-top: 50px;
+    background-color: darkred;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.cta-center-img {
+
+}
+
+.about {
+    height: 700px;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.about-left {
+    padding: 20px 0;
+}
+
+.about-text {
+    margin: 0 60px;
+    font-family: 'Noto Sans', sans-serif;
+    color: darkred;
+    font-size: 2.7em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 130%;
+}
+
+.about-right {
+    display: grid;
+    background-color: #580000;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-image {
+    height: 200px;
+    width: 300px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.about-image:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.portfolio {
+    height: 700px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-top-text {
+    grid-column: span 3;
+    font-family: 'Noto Sans', sans-serif;
+    color: darkred;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.portfolio-link {
+    height: 228px;
+    width: 325px;
+}
+
+.portfolio-img {
+    height: 228px;
+    width: 325px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.portfolio-img:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(20,0,0,0.3);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.contact {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.contact-left {
+    background-color: #a50000;
+}
+
+.contact-form {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 1fr 6fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    margin-right: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-align: right;
+}
+
+input {
+    width: 80%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+textarea {
+    height: 80%;
+    width: 80%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.contact-submit {
+    min-height: 40px;
+    width: 110px;
+    padding: 10px 20px;
+    border: 0;
+    margin-right: calc(20% - 6px);
+    grid-column: 2;
+    align-self: right;
+    justify-self: right;
+    background-color: #3f0000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1em;
+    color: lightgrey;
+}
+
+.contact-right {
+    display: grid;
+    grid-template-rows: 2fr 5fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.contact-title {
+    font-family: 'Noto Sans', sans-serif;
+    color: darkred;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-text {
+    width: 80%;
+    color: darkred;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+footer {
+    min-height: 60px;
+    grid-column: span 3;
+    background-color: darkred;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: lightgrey;
+}
+
+footer p {
+    padding-top: 20px;
+    font-size: 1.2em;
+}
+
+.portfolio-modal {
+    min-height: 200px;
+    width: 0;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.portfolio-modal-title {
+    margin: 20px 0;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    color: darkred;
+}
+
+.portfolio-modal-info {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    color: darkred;
+}
